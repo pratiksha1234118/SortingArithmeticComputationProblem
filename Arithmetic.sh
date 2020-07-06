@@ -61,3 +61,23 @@ for (( i=0; i < 4; i++ ))
 do
   echo ${Array[$i]}
 done
+
+#uc9
+echo "Sort the results to show the Computation Value in Ascending Order "
+for (( i = 0; i < 4 ; i++ ))
+do
+   for (( j = $i; j < 4; j++ ))
+   do
+      if [ ${Array[$i]} -gt ${Array[$j]}  ]; then
+           t=${Array[$i]}
+           Array[$i]=${Array[$j]}
+           Array[$j]=$t
+      fi
+   done
+done
+
+echo -e "\nSorted Numbers in Ascending Order:"
+for (( i=0; i < 4; i++ ))
+do
+  echo ${Array[$i]}
+done
