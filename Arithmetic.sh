@@ -31,3 +31,7 @@ echo "Compute a%b+c"
 result4=`expr $a % $b + $c`
 echo $result4
 
+#uc 6
+echo "Store the results in a Dictionary for every Computation"
+declare -A dictionary=( ["key1"]=$result ["key2"]=$result2 ["key3"]=$result3 ["key4"]=$result4)
+echo "dictionary is ${dictionary[@]}"
