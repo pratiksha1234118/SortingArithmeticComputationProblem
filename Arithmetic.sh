@@ -19,9 +19,15 @@ echo "Compute a * b + c"
 result2=`expr $a '*' $b + $c`
 echo $result2
 
-#uc3
+#uc4
 
 echo "Compute c + a/b"
 result3=`expr $c + $a / $b`
 echo $result3
+
+#uc5
+
+echo "Compute a%b+c"
+result4=`expr $a % $b + $c`
+echo $result4
 
