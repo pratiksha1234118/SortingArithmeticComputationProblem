@@ -35,3 +35,8 @@ echo $result4
 echo "Store the results in a Dictionary for every Computation"
 declare -A dictionary=( ["key1"]=$result ["key2"]=$result2 ["key3"]=$result3 ["key4"]=$result4)
 echo "dictionary is ${dictionary[@]}"
+#uc7
+echo "Read the values from the Dictionary into the array"
+declare -a Array
+Array=("${dictionary[@]}")
+echo "Array ${Array[@]}"
