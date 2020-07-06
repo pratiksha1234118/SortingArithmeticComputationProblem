@@ -37,6 +37,5 @@ declare -A dictionary=( ["key1"]=$result ["key2"]=$result2 ["key3"]=$result3 ["k
 echo "dictionary is ${dictionary[@]}"
 #uc7
 echo "Read the values from the Dictionary into the array"
-declare -a Array
-Array=("${dictionary[@]}")
+Array=([0]=$result [1]=$result2 [2]=$result3 [3]=$result4)
 echo "Array ${Array[@]}"
